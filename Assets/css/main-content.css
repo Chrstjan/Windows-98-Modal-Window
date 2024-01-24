@@ -31,10 +31,23 @@
   border: 2px solid #000;
   padding: 0.1rem 0.2rem;
   cursor: pointer;
+  width: 0.9rem;
+  height: 1rem;
+  position: relative;
 }
 
 .modal-header .x-btn-container a {
   color: #000000;
   font-size: 30px;
-  margin: 0;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-body {
+}
+
+.modal-body .body-header hgroup {
+  text-align: center;
 }
