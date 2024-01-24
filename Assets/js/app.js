@@ -22,6 +22,32 @@ modalHeaderBtnContainer.appendChild(modalHeaderBtn);
 
 appendChildren(modalHeader, [modalHeaderText, modalHeaderBtnContainer]);
 
-appendChildren(modalWindow, [modalHeader]);
+const modalBody = document.createElement("article");
+modalBody.classList.add("modal-body");
+
+const modalBodyHeader = document.createElement("header");
+modalBodyHeader.classList.add("body-header");
+const modalBodyHeaderHgroup = document.createElement("hgroup");
+
+const modalBodyHeaderTextOne = document.createElement("h3");
+modalBodyHeaderTextOne.textContent = "You have reached my website!";
+
+const modalBodyHeaderTextTwo = document.createElement("h4");
+modalBodyHeaderTextTwo.textContent =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+
+appendChildren(modalBodyHeaderHgroup, [
+  modalBodyHeaderTextOne,
+  modalBodyHeaderTextTwo,
+]);
+
+modalBodyHeader.appendChild(modalBodyHeaderHgroup);
+
+const modalFooter = document.createElement("footer");
+modalFooter.classList.add("modal-footer");
+
+appendChildren(modalBody, [modalBodyHeader, modalFooter]);
+
+appendChildren(modalWindow, [modalHeader, modalBody]);
 
 modalContainer.appendChild(modalWindow);
