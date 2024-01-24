@@ -46,6 +46,20 @@ modalBodyHeader.appendChild(modalBodyHeaderHgroup);
 const modalFooter = document.createElement("footer");
 modalFooter.classList.add("modal-footer");
 
+const modalYesBtn = document.createElement("button");
+modalYesBtn.classList.add("modal-btn");
+modalYesBtn.textContent = "Yes";
+
+const modalNoBtn = document.createElement("button");
+modalNoBtn.classList.add("modal-btn");
+modalNoBtn.textContent = "No";
+
+const modalHelpBtn = document.createElement("button");
+modalHelpBtn.classList.add("modal-btn");
+modalHelpBtn.textContent = "Help";
+
+appendChildren(modalFooter, [modalYesBtn, modalNoBtn, modalHelpBtn]);
+
 appendChildren(modalBody, [modalBodyHeader, modalFooter]);
 
 appendChildren(modalWindow, [modalHeader, modalBody]);

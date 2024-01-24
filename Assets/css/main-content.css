@@ -40,14 +40,25 @@
   color: #000000;
   font-size: 30px;
   position: absolute;
-  top: 53%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.modal-body {
-}
-
 .modal-body .body-header hgroup {
   text-align: center;
+}
+
+.modal-body .modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal-footer .modal-btn {
+  cursor: pointer;
+  padding: 0.2rem 1.5rem;
+  box-shadow: 2px 2.3px #333;
+  margin-bottom: 0.3rem;
 }
