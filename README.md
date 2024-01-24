@@ -1,2 +1,2 @@
-# Html-Boilerplate
-A Html Boilerplate
+# Windows 98 Modal
+Modal made with JavaScript
